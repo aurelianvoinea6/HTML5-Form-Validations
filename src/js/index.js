@@ -5,10 +5,6 @@ import "../assets/img/4geeks.ico";
 //import 'breathecode-dom'; //DOM override to make JS easier to use
 import "../style/index.scss";
 
-// window.onload = function() {
-//   console.log("Hello Rigo from the console!");
-// };
-
 const validate = e => {
   e.preventDefault();
   var errorBox = document.querySelector(".alert");
@@ -28,7 +24,7 @@ const validate = e => {
   var stateField = document.querySelector("#exampleState");
   var postalField = document.querySelector("#exampleZip");
 
-  if (accountField.value < 1000000000000000) {
+  if (accountField.value < 16) {
     //16 numbers
     addError("Credit Card number is invalid, it must be 16 digits long.");
     accountField.classList.add("is-invalid");

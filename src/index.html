@@ -28,23 +28,24 @@
                   <div class="col-sm-5 pb-3">
                     <label for="exampleAccount">Card #</label>
                     <input
+                      type="text"
                       class="form-control"
-                      id="exampleAccount"
+                      id="card"
+                      value=""
                       placeholder="XXXXXXXXXXXXXXXX"
-                      type="number"
-                      required
+                      maxlength="16"
                     />
                   </div>
                   <div class="col-sm-3 pb-3">
                     <label for="exampleCtrl">CVC #</label>
                     <input
+                      type="text"
                       class="form-control"
-                      id="exampleCvc"
-                      placeholder="000"
+                      id="cvc"
+                      placeholder="XXX"
                       maxlength="3"
+                      value=""
                       minlength="3"
-                      type="number"
-                      required
                     />
                   </div>
                   <div class="col-sm-4 pb-3">
@@ -54,11 +55,11 @@
                         <i class="fas fa-dollar-sign"></i>
                       </div>
                       <input
+                        type="text"
                         class="form-control"
-                        id="exampleAmount"
+                        id="amount"
                         placeholder="Amount"
-                        type="number"
-                        required
+                        value=""
                       />
                     </div>
                   </div>
@@ -257,10 +258,11 @@
                   <div class="col-sm-3 pb-3">
                     <label for="exampleZip">Postal Code</label>
                     <input
-                      class="form-control"
-                      id="exampleZip"
                       type="text"
-                      required
+                      class="form-control"
+                      id="pcode"
+                      value=""
+                      maxlength="5"
                     />
                   </div>
                   <div class="col-md-6 pb-3">
